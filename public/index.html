@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <style>
+        #login{
+            width: 500px;height: 300px;margin:60px auto;border: 1px solid #000
+        }
+        #login form input{
+            display: block;
+            margin: 50px auto;
+            width: 50%;
+            height: 40px;
+            line-height: 40px;
+        }
+        #login form input:last-child{
+            width: 60px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>首页</h1>
+    <!-- <div id="login" >
+        <form method="POST" action="http://localhost:3000/user">
+            <input type="text" name="username" placeholder="请输入用户名">
+            <input type="text" name="password" placeholder="请输入密码">
+            <input type="submit" value="提交" id="botton">
+        </form>
+    </div>
+    <h1>注册</h1>
+    <div id="login" >
+        <form method="POST" action="http://localhost:3000/register">
+            <input type="text" name="userName" placeholder="请输入用户名">
+            <input type="number" name="age" placeholder="请输入年龄">
+            <input type="text" name="hobby" placeholder="请输入爱好">
+            <input type="submit" value="提交" id="botton">
+        </form>
+    </div> -->
+<script>
+    let botton=document.getElementById('botton')
+    console.log(botton);
+    ;(async ()=>{
+        try{
+            // 第一种
+            // const  result= await axios.get('http://localhost:3000/login?username=666kit&password=123456')
+            // console.log(result)
+            // 第二中
+            // const  result=await  axios.get('http://localhost:3000/login',{
+            //     params:{
+            //         username:'mht',
+            //         password:'123'
+            //
+            //     }
+            // })
+            // console.log(result)
+            // post
+            // const  result= await axios.post('http://localhost:3000/login?username=666kit&password=123456')
+            // console.log(result)
+
+            // const  result=await axios.get('http://localhost:3000/login',{
+            //     params:{
+            //         username:'mht',
+            //         password:'1233'
+            //     }
+            // })
+            // console.log(result)
+        }catch (err)
+        {
+            console.log(err.message);
+        }
+    })()
+
+</script>
+
+</body>
+</html>

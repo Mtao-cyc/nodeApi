@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>node.http</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+        function jsonp(data){
+            console.log(data)
+        }
+    </script>
+</head>
+<body>
+<div id="myDiv"><h2>Let AJAX change this text</h2></div>
+<button id="b01" type="button">Change Content</button>
+    <script src="http://localhost:3000/jsonp?callback=jsonp"></script>
+  <script>
+      // $.get('http://localhost:3000/login',(result)=>{
+      //     console.log(result)
+      // })
+  </script>
+    <script>
+        // 1.通过ajax 获取  2.通过回调函数
+        // jsonp()
+        // function jsonp(data){
+        //     // $.get('http://localhost:3000/jsonp',(res)=>{
+        //     //     console.log(res)
+        //     // })
+        //     console.log(data)
+        // }
+    </script>
+</body>
+</html>
